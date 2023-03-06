@@ -1,13 +1,13 @@
 {% extends 'base.html' %} {% block content %}
 <div class="text-center">
   <h1>
-    画像ファイルをアップロードして<br />
-    写っている顔の向きを判定しよう
+    画像ファイルをアップロードして 写っている顔の向きが<br />
+    正面、左向き、右向き のどれか判定しよう
   </h1>
   <div id="up">
     <form method="POST" enctype="multipart/form-data">
       <input type="file" name="filename" />
-      <input type="submit" value="アップロード" />
+      <input type="submit" value="判定" />
     </form>
   </div>
   <div class="text-warning bg-dark">

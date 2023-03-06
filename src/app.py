@@ -18,7 +18,7 @@ def predict(img):
     y = torch.argmax(net(img), dim=1).cpu().detach().numpy()
     return y
 
-# 推論したラベルから犬か猫かを返す関数
+# 推論したラベルから判定結果を返す関数
 def getName(label):
     if label == 0:
         return '正面'
